@@ -1,0 +1,18 @@
+[
+  {
+    "name":"splice",
+    "info": "splice method of Array \nargs:(x, y, z)\ndescription description description description description description "
+  },{
+    "name":"slice",
+    "info": "slice method of Array\nargs:(x, y, z)\ndescription description description description description description "
+  },{
+    "name":"map",
+    "info": "map method of Array\nargs:(x, y, z)\ndescription description description description description description "
+  },{
+    "name":"filter",
+    "info": "filter method of Array\nargs:(x, y, z)\ndescription description description description description description "
+  },{
+    "name":"indexOf",
+    "info": "indexOf method of Array\nargs:(x, y, z)\ndescription description description description description description "
+  }
+  ]

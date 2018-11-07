@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+}
+
+body{
+  font-family: monospace;
+}
+.menubar{
+  position: fixed;
+  background-color:white;
+}
+
+.page_container{
+  position: absolute;
+  bottom: 0px;
+  height:calc(100% - 55px);
+  width: 100%;
+  overflow: scroll;
+}
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #ccc;
+}
+.Page{
+  display: grid;
+
+  grid-template-columns: 524px 524px ;
+  grid-template-rows: auto auto auto;
+
+  grid-auto-flow: column;
+
+  width:1050px;
+  height: 801px;
+  page-break-before: always;
+}
+.Card{
+  display: flex;/* //magical centering -- remember this */
+  border-top: rgba(0,0,0,0.1) 1px dashed;
+  border-left: rgba(0,0,0,0.1) 1px dashed;
+  height: 265px;
+  /* width: 524px; */
+}
+.Card p{
+  white-space: pre-wrap;
+
+  /* //magical centering -- remember this:*/
+  margin: auto;
+
+  /*word wrap made it not go out of bounds for some reason*/
+  word-wrap: break-word;
+  width: 450px;
+
+
+}
+.front{
+  font-size: 30px;
+}
+
+.back{
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: left;
+}
+/* @page{
+  size: 8.5in 11in landscape;
+
+} */
+.help{
+  display: none;
+  position: absolute;
+  top:55px;
+  left:0px;
+  width: 1000px;
+  height: 1000px;
+  background-color: #bce;
+}
+.help p{
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 0px 5px;
+  text-align: left;
+}
+#helpBtn:hover ~ .help{
+  display:block !important;
+}
+@media print{
+  .menubar{
+    display: none;
+  }
+  .page_container{
+    position:static !important;
+    overflow: visible !important;
+  }
+}
